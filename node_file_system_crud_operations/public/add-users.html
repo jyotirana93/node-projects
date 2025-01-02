@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Add Users</title>
+  </head>
+  <body>
+    <header class="header"><a href="/">Home</a></header>
+
+    <div class="addUsers">
+      <h1>Add Users</h1>
+
+      <input
+        type="text"
+        name="firstname"
+        id="firstname"
+        placeholder="firstname"
+      />
+      <input type="text" name="age" id="age" placeholder="age" />
+      <input type="text" name="desg" id="desg" placeholder="designation" />
+      <br />
+      <button id="submit" onclick="submit()">Submit</button>
+
+      <br />
+
+      <p id="timer"></p>
+      <table id="userTable" class="userTable">
+        <thead>
+          <tr>
+            <th>Sl.No</th>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Age</th>
+            <th>Designation</th>
+            <th colspan="2">Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p id="deleteMsg"></p>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

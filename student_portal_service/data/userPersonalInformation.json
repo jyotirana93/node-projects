@@ -1,0 +1,22 @@
+[
+  {
+    "userId": 11,
+    "dateCreated": "2024-06-13T08:53:35.277Z",
+    "firstname": "Geeta ",
+    "lastname": "Desai",
+    "mobile": "634222222",
+    "email": "geeta_desai@ymail.com",
+    "gender": "female",
+    "image": "/images/Geeta 3.jpeg"
+  },
+  {
+    "userId": 14,
+    "dateCreated": "2024-06-13T09:28:54.141Z",
+    "firstname": "Simran",
+    "lastname": "Sharma",
+    "mobile": "9635222",
+    "email": "simran@ymail.com",
+    "gender": "female",
+    "image": "/images/Simran7.jpeg"
+  }
+]

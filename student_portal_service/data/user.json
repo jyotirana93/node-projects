@@ -1,0 +1,39 @@
+[
+  {
+    "username": "david",
+    "roles": { "user": 2001 },
+    "password": "$2b$10$wxUfakbvnx.7Magk/nXD..uBLp6kb4EORCE.lWAkkQrZJ1ATx4v3m",
+    "refreshToken": "",
+    "isLoggedIn": false
+  },
+  {
+    "username": "geeta",
+    "roles": { "student": 2024 },
+    "password": "$2b$10$YTrjmvVJ0jux8kXZynSKyeT/8gVgw.LarN8KzAPUImu3nNrJchDe.",
+    "refreshToken": "",
+    "isLoggedIn": false
+  },
+  {
+    "username": "jyoti",
+    "roles": { "admin": 1986, "user": 2001 },
+    "password": "$2b$10$3khnHC4qkSS.ymaCVo.27e053ldsQqE0Kc32Lsi3YYnqZ9uP9bLya",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imp5b3RpIiwiaWF0IjoxNzIxMzcyMjE2LCJleHAiOjE3MjE0NTg2MTZ9.zVj2Gt1HbN_Mvhc7c5tzBpK92QdAPg6ZZjcYmx_jrH0",
+    "isLoggedIn": true,
+    "userSocketId": "khBnSt_rcm9ZJvnQAAAD"
+  },
+  {
+    "username": "Amit",
+    "roles": { "student": 2024 },
+    "password": "$2b$10$3mrS/jYm4EfNeDFDtmSwa.M4OFAA1g0v8wepnf23npRfQ5zenaNqS",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFtaXQiLCJpYXQiOjE3MjEzNzIyNjIsImV4cCI6MTcyMTQ1ODY2Mn0.zwDB54OLti8mv6Kr1zq1Pf3IqDE2RO3MPdSBbIquf80",
+    "isLoggedIn": true,
+    "userSocketId": "5o2QqNK0YHSs2gztAAAL"
+  },
+  {
+    "username": "girija",
+    "roles": { "user": 2024 },
+    "password": "$2b$10$/v5.ovJq65cH.6ewkqhq4.4xyu.lZQpC6Gzmx5nZxKv8VIa7ShRqi",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdpcmlqYSIsImlhdCI6MTcyMTM3MjQyMCwiZXhwIjoxNzIxNDU4ODIwfQ.CtmnyOJQ7Z_SdUTy8LGDuaLkahsvgS9QCizT7DaQ8sA",
+    "isLoggedIn": true
+  }
+]

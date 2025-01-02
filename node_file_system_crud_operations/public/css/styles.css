@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  width: 100%;
+  padding: 20px;
+
+  font-size: 20px;
+}
+img {
+  height: 20rem;
+  width: 20rem;
+  margin-top: 50px;
+}
+
+.userTable,
+tr,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 7px;
+}
+.addUsers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#deleteMsg {
+  display: flex;
+  justify-content: center;
+}
+a {
+  padding: 10px;
+}
