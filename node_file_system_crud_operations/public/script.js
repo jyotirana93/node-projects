@@ -30,9 +30,12 @@ async function fetchData() {
   <td>${user.name}</td>
   <td>${user.age}</td>
   <td>${user.desg}</td>
-  <td><span><button onclick ="editUser('${user.id}','${user.name}',${
-        user.age
-      },'${user.desg}')" >Edit</button></span></td>
+  <td><span><button 
+  onclick ="editUser('${user.id}','${user.name}',${user.age},'${user.desg}')" 
+      
+      
+      >Edit</button></span></td>
+      
   <td><span><button onclick ="deleteUser('${
     user.id
   }')" >Delete</button></span></td>
@@ -118,6 +121,7 @@ async function submit() {
     userID = '';
   }
 }
+
 const addUserToTable = (user, length) => {
   const tableBody = document.querySelector('#userTable tbody');
   const row = document.createElement('tr');
@@ -146,31 +150,35 @@ const editUser = (id, Name, Age, Desg) => {
 
 const deleteUser = async (id) => {
   const rows = document.querySelectorAll('#userTable tbody tr');
+  console.log(typeof id);
+
   rows.forEach((row) => {
-    if (row.cells[1].innerHTML === id) {
-      row.cells[0].innerHTML = '';
-      row.cells[1].innerHTML = '';
-      row.cells[2].innerHTML = '';
-      row.cells[3].innerHTML = '';
-      row.cells[4].innerHTML = '';
-      row.cells[5].innerHTML = '';
-      row.cells[6].innerHTML = '';
-      row.remove();
-    }
+    console.log(row.cells[1]);
+
+    // if (row.cells[1].innerHTML === id) {
+    //   row.cells[0].innerHTML = '';
+    //   row.cells[1].innerHTML = '';
+    //   row.cells[2].innerHTML = '';
+    //   row.cells[3].innerHTML = '';
+    //   row.cells[4].innerHTML = '';
+    //   row.cells[5].innerHTML = '';
+    //   row.cells[6].innerHTML = '';
+    //   row.remove();
+    // }
   });
 
-  const res = await fetch(`http://localhost:3500/${id}`, {
-    method: 'DELETE',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
-  const result = await res.json();
+  // const res = await fetch(`http://localhost:3500/${id}`, {
+  //   method: 'DELETE',
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //   },
+  // });
+  // const result = await res.json();
 
-  p.textContent = result.msg;
-  lastUsersCount = result.data.length;
+  // p.textContent = result.msg;
+  // lastUsersCount = result.data.length;
 
-  removeDeleteMsg();
+  // removeDeleteMsg();
 };
 
 let countDown = 10;

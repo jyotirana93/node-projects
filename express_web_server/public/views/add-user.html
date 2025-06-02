@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Add User</title>
+
+    <style>
+      body {
+        background-color: rgb(170, 210, 153);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+      }
+      .tableContainer,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 5px;
+      }
+
+      .tableContainer {
+        border-collapse: collapse;
+        margin: 1.5rem;
+        width: 50%;
+      }
+      a {
+        color: black;
+        font-size: 1.5rem;
+        padding: 1rem;
+        font-weight: 800;
+      }
+      #userForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .input_container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="/index.html">Home</a>
+    </header>
+
+    <div class="container" id="container">
+      <h1>CRUD operations</h1>
+      <form id="userForm" action="">
+        <div class="input_container">
+          <label for="fname">Firstname:</label>
+          <input type="text" name="fname" id="fname" />
+        </div>
+        <div class="input_container">
+          <label for="lname">Lastname:</label>
+          <input type="text" name="lname" id="lname" />
+        </div>
+        <div class="input_container">
+          <label for="desgn">Designation:</label>
+          <input type="text" name="desgn" id="desgn" />
+        </div>
+
+        <div>
+          <img
+            src="../assets/images/default_image.avif"
+            alt="default image"
+            width="120"
+            height="120"
+            id="image_preview"
+            style="border-radius: 50%; object-fit: cover"
+          />
+          <input
+            type="file"
+            name="user_profile_image"
+            id="user_profile_image"
+            style="display: none"
+          />
+        </div>
+
+        <button id="addUserBtn" type="submit">Submit</button>
+      </form>
+
+      <table class="tableContainer">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
