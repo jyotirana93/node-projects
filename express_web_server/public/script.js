@@ -78,6 +78,16 @@ const handleSubmit = async (e) => {
         desgn,
         userImage,
       };
+      const isEmpty = Object.values(usersData).every((data) => {
+        return data;
+      });
+
+      if (!isEmpty) {
+        span.textContent = 'Pls enter fields';
+        container.appendChild(span);
+
+        return;
+      }
 
       const response = await fetch(API_URL, {
         method: 'POST',
